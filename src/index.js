@@ -9,6 +9,6 @@ var app = express();app.get('/', function (req, res) {
   require('./routes.js')(app);
 
 app.listen(3000);
-console.log("on port 3000...");
+console.log("Jammin\' on port 3000...");
 
 
