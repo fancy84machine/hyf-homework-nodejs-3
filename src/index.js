@@ -1,12 +1,14 @@
-const express= require('express');
 
-const port=3000;
-const app= express();
+var express = require('express');
 
-app.get ('/', function (req, res){
-    res.send ('Hello World!');
-});
+var app = express();
 
-app.listen(port);
+var app = express();app.get('/', function (req, res) {
+    res.send('Hello World!');
+  });
 
-console.log ('On port ${port}...')
+  require('./routes.js')(app);
+
+app.listen(3000);
+console.log("Jammin\' on port 3000...");
+
