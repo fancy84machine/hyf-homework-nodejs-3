@@ -1,14 +1,14 @@
-const express= require('express');
+var express = require('express');
 
-const port=3000;
-const app= express();
+var app = express();
 
-app.get ('/', function (req, res){
-    res.send ('Hello World!');
-});
+var app = express();app.get('/', function (req, res) {
+    res.send('Hello World!');
+  });
 
-app.listen(port);
+  require('./routes.js')(app);
 
-console.log ('On port ${port}...')
+app.listen(3000);
+console.log("on port 3000...");
 
 
